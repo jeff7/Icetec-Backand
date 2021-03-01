@@ -24,6 +24,7 @@ class UserController extends Controller
     public function index()
     {
         //
+        return response()->json('Hellou Heroku');
         $users = $this->user->paginate('10');
 
         return response()->json($users,200);
